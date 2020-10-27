@@ -1,0 +1,67 @@
+<html>
+<center>
+   <head>
+      <title>Zodiac Notes</title>
+      <script>
+        function fortune()
+        {
+                // Logical OR ( || )
+               // Cond1 Cond2  Result
+              //   T     T      T-Runs
+             //    F     T      T-Runs
+            //     T     F      T-Runs
+          //       F     F      F-Does Not Run
+
+          // Logical AND ( && )
+         // Cond1 Cond2  Result
+        //   T     T      T-Runs
+       //    F     T      F-Does Not Run
+      //     T     F      F-Does Not Runs
+    //       F     F      F-Does Not Run
+             var month = 5;
+             var day = 12;
+             //ARies March 21 April 19
+             if(month == 3 || month == 4)
+             {
+             }
+              //Taurus (4/20 - 5/20)
+             if((month == 4 &&  (day <= 20 && day >= 30)) || (month == 5 && (day >= 1  && day <= 20)))
+             {
+                    document.getElementById("message").innerHTML = "Taurus: you are Awesome!!";
+                    document.getElementById("symbol").innerHTML = "<img src = 'pic.png'>";
+
+             }
+
+        }
+      </script>
+
+      <style>
+       /*Give me a background*/
+       /*Change font size, color, style*/
+       /*Do something on Hover*/
+
+       body {
+         background-image: url(https://images.newscientist.com/wp-content/uploads/2019/07/02111520/gettyimages-157639696.jpg);
+         background-size: cover;
+         color: white;
+         font-size: 30px;
+       }
+
+       hr{
+         width: 50%;
+         border-style: groove;
+       }
+      </style>
+   </head>
+
+   <body>
+     <h2>Horoscope</h2>
+     <input type = "text" value = "Month">
+     <input type = "text" value = "Day">
+     <input type = "button" value = "SUBMIT" onclick = "fortune()">
+     <span id = "symbol"></span>
+     <span id = "message"></span
+   </body>
+   <hr>
+</center>
+</html>
