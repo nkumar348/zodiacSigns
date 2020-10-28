@@ -1,7 +1,7 @@
 <html>
 <center>
    <head>
-      <title>Zodiac Notes</title>
+      <title>Zodiac Horoscope</title>
       <script>
         function fortune()
         {
@@ -18,20 +18,106 @@
        //    F     T      F-Does Not Run
       //     T     F      F-Does Not Runs
     //       F     F      F-Does Not Run
-             var month = 5;
-             var day = 12;
-             //ARies March 21 April 19
-             if(month == 3 || month == 4)
-             {
-             }
+             var month = document.getElementById('input1').value;
+             var day = document.getElementById('input2').value;
+
+             //Aquarius (Jan 20 - Feb 18)
+      if((month == 1 &&  (day >= 20 && day <= 31)) || (month == 2 && (day >= 1 && day <= 18)))
+           {
+             document.getElementById("message").innerHTML = "You are an Aquarius!";
+             document.getElementById("symbol").innerHTML = "<img src='aquarius.jpg' width='200' length='200'>";
+           }
+
+
+
+            //Pisces (Feb 19 - Mar 20)
+     if((month == 2 &&  (day >= 19 && day <= 28)) || (month == 3 && (day >= 1 && day <= 20)))
+          {
+            document.getElementById("message").innerHTML = "You are an Pisces!";
+            document.getElementById("symbol").innerHTML = "<img src='pisces.jpg' width='200' length='200'>";
+          }
+
+
+              //Aries (Mar 21 - Apr 19)
+     if((month == 3 &&  (day >= 21 && day <= 31)) || (month == 4 && (day >= 1  && day <= 19)))
+          {
+            document.getElementById("message").innerHTML = "You are an Aries!";
+            document.getElementById("symbol").innerHTML = "<img src='aries.jpg' width='200' length='200'>";
+          }
+
+
               //Taurus (4/20 - 5/20)
-             if((month == 4 &&  (day <= 20 && day >= 30)) || (month == 5 && (day >= 1  && day <= 20)))
-             {
-                    document.getElementById("message").innerHTML = "Taurus: you are Awesome!!";
-                    document.getElementById("symbol").innerHTML = "<img src = 'pic.png'>";
+     if((month == 4 &&  (day >= 20 && day <= 30)) || (month == 5 && (day >= 1  && day <= 20)))
 
-             }
+         {
+           document.getElementById("message").innerHTML = "You are a Taurus!";
+           document.getElementById("symbol").innerHTML = "<img src='taurus.png' width='200' length='200'>";
+         }
 
+
+             //Gemini (5/21 - 6/20)
+    if((month == 5 &&  (day >= 21 && day <= 31)) || (month == 6 && (day >= 1  && day <= 20)))
+
+        {
+          document.getElementById("message").innerHTML = "You are a Gemini!";
+          document.getElementById("symbol").innerHTML = "<img src='gemini.png' width='200' length='200'>";
+        }
+
+            //Cancer (6/21 - 7/22)
+    if((month == 6 &&  (day >= 21 && day <= 30)) || (month == 7 && (day >= 1  && day <= 22)))
+
+       {
+         document.getElementById("message").innerHTML = "You are a Cancer!";
+         document.getElementById("symbol").innerHTML = "<img src='cancer.png' width='200' length='200'>";
+       }
+
+          //Leo (7/23 - 8/22)
+    if((month == 7 &&  (day >= 23 && day <= 31)) || (month == 8 && (day >= 1  && day <= 22)))
+
+      {
+        document.getElementById("message").innerHTML = "You are a Leo!";
+        document.getElementById("symbol").innerHTML = "<img src='leo.png' width='200' length='200'>";
+      }
+
+          //Virgo (8/23 - 9/22)
+    if((month == 8 &&  (day >= 23 && day <= 31)) || (month == 9 && (day >= 1  && day <= 22)))
+
+     {
+       document.getElementById("message").innerHTML = "You are a Virgo!";
+       document.getElementById("symbol").innerHTML = "<img src='virgo.png' width='200' length='200'>";
+     }
+
+         //Libra (9/23 - 10/22)
+    if((month == 9 &&  (day >= 23 && day <= 30)) || (month == 10 && (day >= 1  && day <= 22)))
+
+    {
+      document.getElementById("message").innerHTML = "You are a Libra!";
+      document.getElementById("symbol").innerHTML = "<img src='libra.jpg' width='200' length='200'>";
+    }
+
+        //Scorpio (10/23 - 11/21)
+    if((month == 10 &&  (day >= 23 && day <= 31)) || (month == 11 && (day >= 1  && day <= 21)))
+
+    {
+     document.getElementById("message").innerHTML = "You are a Scorpio!";
+     document.getElementById("symbol").innerHTML = "<img src='scorpio.jpg' width='200' length='200'>";
+    }
+
+        //Sagittarius (11/22 - 12/21)
+    if((month == 11 &&  (day >= 22 && day <= 30)) || (month == 12 && (day >= 1  && day <= 21)))
+
+    {
+     document.getElementById("message").innerHTML = "You are a Sagittarius!";
+     document.getElementById("symbol").innerHTML = "<img src='sagittarius.png' width='200' length='200'>";
+    }
+
+        //Capricorn (12/22 - 1/19)
+    if((month == 12 &&  (day >= 22 && day <= 31)) || (month == 1 && (day >= 1  && day <= 19)))
+
+    {
+     document.getElementById("message").innerHTML = "You are a Capricorn!";
+     document.getElementById("symbol").innerHTML = "<img src='capricorn.png' width='200' length='200'>";
+    }
         }
       </script>
 
@@ -41,45 +127,33 @@
        /*Do something on Hover*/
 
        body {
-     
-       hr{
-         width: 50%;
-         border-style: groove;
-       }
-      </style>
-   </head>
-
-   <body>
-     <h2>Horoscope</h2>
-     <input type = "text" value = "Month">
-     <input type = "text" value = "Day">
-     <input type = "button" value = "SUBMIT" onclick = "fortune()">
-     <span id = "symbol"></span>
-     <span id = "message"></span
-   </body>
-   <hr>
-</center>
-</html>    background-image: url(https://images.newscientist.com/wp-content/uploads/2019/07/02111520/gettyimages-157639696.jpg);
+         background-image: url(https://images.newscientist.com/wp-content/uploads/2019/07/02111520/gettyimages-157639696.jpg);
          background-size: cover;
          color: white;
          font-size: 30px;
        }
 
        hr{
-         width: 50%;
+         width: 75%;
          border-style: groove;
+       }
+
+       input[type="submit"].btn:hover{
+         background-color: red;
        }
       </style>
    </head>
 
    <body>
      <h2>Horoscope</h2>
-     <input type = "text" value = "Month">
-     <input type = "text" value = "Day">
+     <input id="input1" type = "text" value = "month">
+     <input id="input2" type = "text" value = "day">
      <input type = "button" value = "SUBMIT" onclick = "fortune()">
+     <hr><br><br>
      <span id = "symbol"></span>
-     <span id = "message"></span
+     <br>
+     <span id = "message"></span>
    </body>
-   <hr>
 </center>
 </html>
+
