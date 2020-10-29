@@ -1,300 +1,301 @@
 <html>
 <center>
-   <head>
-      <title>Zodiac Horoscope</title>
-      <script>
-        function fortune()
-        {
-                // Logical OR ( || )
-               // Cond1 Cond2  Result
-              //   T     T      T-Runs
-             //    F     T      T-Runs
-            //     T     F      T-Runs
-          //       F     F      F-Does Not Run
+ <head>
+    <title>Zodiac Horoscope</title>
+    <script>
+      function fortune()
+      {
+              // Logical OR ( || )
+             // Cond1 Cond2  Result
+            //   T     T      T-Runs
+           //    F     T      T-Runs
+          //     T     F      T-Runs
+        //       F     F      F-Does Not Run
 
-         // Logical AND ( && )
-         // Cond1 Cond2  Result
-         //   T     T      T-Runs
-         //   F     T      F-Does Not Run
-        //    T     F      F-Does Not Runs
-        //    F     F      F-Does Not Run
-             var month = document.getElementById('input1').value;
-             var day = document.getElementById('input2').value;
+       // Logical AND ( && )
+       // Cond1 Cond2  Result
+       //   T     T      T-Runs
+       //   F     T      F-Does Not Run
+      //    T     F      F-Does Not Runs
+      //    F     F      F-Does Not Run
+           var month = document.getElementById('input1').value;
+           var day = document.getElementById('input2').value;
 
-             var invalid = document.getElementById('message').innerHTML = "Please enter a valid birthday!";
+           var invalid = document.getElementById('message').innerHTML = "Please enter a valid birthday!";
 
-             if (month < 1 || month > 12) {
-                 alert(invalid);
-             }
-
-
-
-
-
-             //Aquarius (Jan 20 - Feb 18)
-      if((month == 1 &&  (day >= 20 && day <= 31)) || (month == 2 && (day >= 1 && day <= 18)))
-           {
-             document.getElementById("message").innerHTML = "You are an Aquarius! You are a deep thinker and highly intellectual. You are able to see without prejudice so you can easily solve problems. Aquarius can easily adapt to the energy around them but sometimes they need time alone to restore their power.";
-             document.getElementById("symbol").innerHTML = "<img src='https://images-na.ssl-images-amazon.com/images/I/71u-jnL2PhL.jpg' width='200' length='200'>";
-           }  else {
-
-        if((month == 1 &&  (day > 31 || day < 1)) || (month == 2 && (day > 29 || day < 1))){
+           if (month < 1 || month > 12) {
                alert(invalid);
-             } }
+           }
 
 
 
-            //Pisces (Feb 19 - Mar 20)
-     if((month == 2 &&  (day >= 19 && day <= 29)) || (month == 3 && (day >= 1 && day <= 20)))
-          {
-            document.getElementById("message").innerHTML = "You are a Pisces! You are very friendly so you find yourself in the company of other people. You are selfless and are willing to help others without looking for a reward. Pisces are characterized by empathy and expressed emotional capacity.";
-            document.getElementById("symbol").innerHTML = "<img src='https://images-na.ssl-images-amazon.com/images/I/41WhSxABQ5L._AC_SY400_.jpg' width='200' length='200'>";
-          } else {
-
-       if(month == 3 && (day > 31 || day < 1)){
-              alert(invalid);
-            } }
 
 
-              //Aries (Mar 21 - Apr 19)
-     if((month == 3 &&  (day >= 21 && day <= 31)) || (month == 4 && (day >= 1  && day <= 19)))
-          {
-            document.getElementById("message").innerHTML = "You are an Aries! You are energetic and turbulent. You look for dynamic, speed, and competition so you are usually the first in everything. Aries likes comfortable clothes, leadership roles, physical challenges, and individual sports.";
-            document.getElementById("symbol").innerHTML = "<img src='https://st2.depositphotos.com/3804071/5373/v/450/depositphotos_53734499-stock-illustration-neon-signs-of-the-zodiac.jpg' width='200' length='200'>";
-          } else {
-
-       if(month == 4 && (day > 30 || day < 1)){
-              alert(invalid);
-            } }
-
-
-              //Taurus (4/20 - 5/20)
-     if((month == 4 &&  (day >= 20 && day <= 30)) || (month == 5 && (day >= 1  && day <= 20)))
-
+           //Aquarius (Jan 20 - Feb 18)
+    if((month == 1 &&  (day >= 20 && day <= 31)) || (month == 2 && (day >= 1 && day <= 18)))
          {
-           document.getElementById("message").innerHTML = "You are a Taurus! You are practical and well-grounded. You feel the need to be surrounded by love and beauty. Taurus are sensual, tactile, stable and conservative. Taurus likes gardening, cooking, music, romance, high quality clothes, and working with hands.";
-           document.getElementById("symbol").innerHTML = "<img src='https://i2.wp.com/lamarrtownsendtarot.com/wp-content/uploads/2017/07/taurus.png?fit=1568%2C1531&ssl=1' width='200' length='200'>";
+           document.getElementById("message").innerHTML = "You are an Aquarius! You are a deep thinker and highly intellectual. You are able to see without prejudice so you can easily solve problems. Aquarius can easily adapt to the energy around them but sometimes they need time alone to restore their power.";
+           document.getElementById("symbol").innerHTML = "<img src='https://images-na.ssl-images-amazon.com/images/I/71u-jnL2PhL.jpg' width='200' length='200'>";
          }  else {
 
-      if(month == 5 && (day > 31 || day < 1)){
+      if((month == 1 &&  (day > 31 || day < 1)) || (month == 2 && (day > 29 || day < 1))){
              alert(invalid);
            } }
 
 
-             //Gemini (5/21 - 6/20)
-    if((month == 5 &&  (day >= 21 && day <= 31)) || (month == 6 && (day >= 1  && day <= 20)))
 
+          //Pisces (Feb 19 - Mar 20)
+   if((month == 2 &&  (day >= 19 && day <= 29)) || (month == 3 && (day >= 1 && day <= 20)))
         {
-          document.getElementById("message").innerHTML = "You are a Gemini! You are expressive and quick-witted. Gemini represents two different personalities in one. Gemini are sociable, communicative and ready for fun, but can suddenly get serious, thoughtful, and restless.";
-          document.getElementById("symbol").innerHTML = "<img src='https://st2.depositphotos.com/3804071/5373/v/450/depositphotos_53734495-stock-illustration-neon-signs-of-the-zodiac.jpg' width='200' length='200'>";
+          document.getElementById("message").innerHTML = "You are a Pisces! You are very friendly so you find yourself in the company of other people. You are selfless and are willing to help others without looking for a reward. Pisces are characterized by empathy and expressed emotional capacity.";
+          document.getElementById("symbol").innerHTML = "<img src='https://images-na.ssl-images-amazon.com/images/I/41WhSxABQ5L._AC_SY400_.jpg' width='200' length='200'>";
         } else {
 
-     if(month == 6 && (day > 30 || day < 1)){
+     if(month == 3 && (day > 31 || day < 1)){
             alert(invalid);
           } }
 
-            //Cancer (6/21 - 7/22)
-    if((month == 6 &&  (day >= 21 && day <= 30)) || (month == 7 && (day >= 1  && day <= 22)))
+
+            //Aries (Mar 21 - Apr 19)
+   if((month == 3 &&  (day >= 21 && day <= 31)) || (month == 4 && (day >= 1  && day <= 19)))
+        {
+          document.getElementById("message").innerHTML = "You are an Aries! You are energetic and turbulent. You look for dynamic, speed, and competition so you are usually the first in everything. Aries likes comfortable clothes, leadership roles, physical challenges, and individual sports.";
+          document.getElementById("symbol").innerHTML = "<img src='https://st2.depositphotos.com/3804071/5373/v/450/depositphotos_53734499-stock-illustration-neon-signs-of-the-zodiac.jpg' width='200' length='200'>";
+        } else {
+
+     if(month == 4 && (day > 30 || day < 1)){
+            alert(invalid);
+          } }
+
+
+            //Taurus (4/20 - 5/20)
+   if((month == 4 &&  (day >= 20 && day <= 30)) || (month == 5 && (day >= 1  && day <= 20)))
 
        {
-         document.getElementById("message").innerHTML = "You are a Cancer! You are deeply intuitive and sentimental. Cancer is one of the most challenging zodiacs to get to know. They are deeply emotional and sensitive and care deeply about the matters of their family and home. ";
-         document.getElementById("symbol").innerHTML = "<img src='https://i1.wp.com/lamarrtownsendtarot.com/wp-content/uploads/2017/07/cancer.png?fit=1568%2C1531&ssl=1' width='200' length='200'>";
+         document.getElementById("message").innerHTML = "You are a Taurus! You are practical and well-grounded. You feel the need to be surrounded by love and beauty. Taurus are sensual, tactile, stable and conservative. Taurus likes gardening, cooking, music, romance, high quality clothes, and working with hands.";
+         document.getElementById("symbol").innerHTML = "<img src='https://i2.wp.com/lamarrtownsendtarot.com/wp-content/uploads/2017/07/taurus.png?fit=1568%2C1531&ssl=1' width='200' length='200'>";
        }  else {
 
-    if(month == 7 && (day > 31 || day < 1)){
+    if(month == 5 && (day > 31 || day < 1)){
            alert(invalid);
          } }
 
-          //Leo (7/23 - 8/22)
-    if((month == 7 &&  (day >= 23 && day <= 31)) || (month == 8 && (day >= 1  && day <= 22)))
+
+           //Gemini (5/21 - 6/20)
+  if((month == 5 &&  (day >= 21 && day <= 31)) || (month == 6 && (day >= 1  && day <= 20)))
 
       {
-        document.getElementById("message").innerHTML = "You are a Leo! You are a natural born leader. You are dramatic, self-confident, dominant, and extremely difficult to resist. Leos are able to achieve anything they want to in any area of life they commit to. Leos often have friends that are generous and loyal.";
-        document.getElementById("symbol").innerHTML = "<img src='https://i2.wp.com/lamarrtownsendtarot.com/wp-content/uploads/2017/07/leo.png?fit=1568%2C1531&ssl=1' width='200' length='200'>";
+        document.getElementById("message").innerHTML = "You are a Gemini! You are expressive and quick-witted. Gemini represents two different personalities in one. Gemini are sociable, communicative and ready for fun, but can suddenly get serious, thoughtful, and restless.";
+        document.getElementById("symbol").innerHTML = "<img src='https://st2.depositphotos.com/3804071/5373/v/450/depositphotos_53734495-stock-illustration-neon-signs-of-the-zodiac.jpg' width='200' length='200'>";
       } else {
 
-   if(month == 8 && (day > 31 || day < 1)){
+   if(month == 6 && (day > 30 || day < 1)){
           alert(invalid);
         } }
 
-          //Virgo (8/23 - 9/22)
-    if((month == 8 &&  (day >= 23 && day <= 31)) || (month == 9 && (day >= 1  && day <= 22)))
+          //Cancer (6/21 - 7/22)
+  if((month == 6 &&  (day >= 21 && day <= 30)) || (month == 7 && (day >= 1  && day <= 22)))
 
      {
-       document.getElementById("message").innerHTML = "You are a Virgo! You pay attention to the smallest details. You have a deep sense of humanity. Virgos have a methodical approach to life that ensures nothing is left to chance. Virgos won't accept their feelings as true when it is opposed to reason.";
-       document.getElementById("symbol").innerHTML = "<img src='https://i2.wp.com/lamarrtownsendtarot.com/wp-content/uploads/2017/07/virgo.png?fit=1568%2C1531&ssl=1' width='200' length='200'>";
+       document.getElementById("message").innerHTML = "You are a Cancer! You are deeply intuitive and sentimental. Cancer is one of the most challenging zodiacs to get to know. They are deeply emotional and sensitive and care deeply about the matters of their family and home. ";
+       document.getElementById("symbol").innerHTML = "<img src='https://i1.wp.com/lamarrtownsendtarot.com/wp-content/uploads/2017/07/cancer.png?fit=1568%2C1531&ssl=1' width='200' length='200'>";
      }  else {
 
-  if(month == 9 && (day > 30 || day < 1)){
+  if(month == 7 && (day > 31 || day < 1)){
          alert(invalid);
        } }
 
-         //Libra (9/23 - 10/22)
-    if((month == 9 &&  (day >= 23 && day <= 30)) || (month == 10 && (day >= 1  && day <= 22)))
+        //Leo (7/23 - 8/22)
+  if((month == 7 &&  (day >= 23 && day <= 31)) || (month == 8 && (day >= 1  && day <= 22)))
 
     {
-      document.getElementById("message").innerHTML = "You are a Libra! You are peaceful, fair, and hate being alone. You like partnership. Libras are fasinated by balance and symmetry and are in a constant chase for justice and equality. Libras are willing to do nearly everything to avoid conflict. ";
-      document.getElementById("symbol").innerHTML = "<img src='https://amethystlunarose.com/wp-content/uploads/2018/11/Libra-1200-1140x863.jpg' width='200' length='200'>";
+      document.getElementById("message").innerHTML = "You are a Leo! You are a natural born leader. You are dramatic, self-confident, dominant, and extremely difficult to resist. Leos are able to achieve anything they want to in any area of life they commit to. Leos often have friends that are generous and loyal.";
+      document.getElementById("symbol").innerHTML = "<img src='https://i2.wp.com/lamarrtownsendtarot.com/wp-content/uploads/2017/07/leo.png?fit=1568%2C1531&ssl=1' width='200' length='200'>";
     } else {
 
- if(month == 10 && (day > 31 || day < 1)){
+ if(month == 8 && (day > 31 || day < 1)){
         alert(invalid);
       } }
 
-        //Scorpio (10/23 - 11/21)
-    if((month == 10 &&  (day >= 23 && day <= 31)) || (month == 11 && (day >= 1  && day <= 21)))
+        //Virgo (8/23 - 9/22)
+  if((month == 8 &&  (day >= 23 && day <= 31)) || (month == 9 && (day >= 1  && day <= 22)))
 
-    {
-     document.getElementById("message").innerHTML = "You are a Scorpio! You are passionate and assertive. You are determined and decisive and will research until they find out the truth. Scorpios are resourceful, brave, passionate, stubborn, and a true friend. You will keep other people's secrets no matter what.";
-     document.getElementById("symbol").innerHTML = "<img src='https://blog.prepscholar.com/hs-fs/hubfs/zodiac-sign-4374412_1920.jpg?width=459&name=zodiac-sign-4374412_1920.jpg' width='200' length='200'>";
-    } else {
+   {
+     document.getElementById("message").innerHTML = "You are a Virgo! You pay attention to the smallest details. You have a deep sense of humanity. Virgos have a methodical approach to life that ensures nothing is left to chance. Virgos won't accept their feelings as true when it is opposed to reason.";
+     document.getElementById("symbol").innerHTML = "<img src='https://i2.wp.com/lamarrtownsendtarot.com/wp-content/uploads/2017/07/virgo.png?fit=1568%2C1531&ssl=1' width='200' length='200'>";
+   }  else {
 
- if(month == 11 && (day > 30 || day < 1)){
-        alert(invalid);
-      } }
+if(month == 9 && (day > 30 || day < 1)){
+       alert(invalid);
+     } }
 
-        //Sagittarius (11/22 - 12/21)
-    if((month == 11 &&  (day >= 22 && day <= 30)) || (month == 12 && (day >= 1  && day <= 21)))
+       //Libra (9/23 - 10/22)
+  if((month == 9 &&  (day >= 23 && day <= 30)) || (month == 10 && (day >= 1  && day <= 22)))
 
-    {
-     document.getElementById("message").innerHTML = "You are a Sagittarius! You are curious and energetic. You are one of the biggest travelers among the zodiac signs. Sagittarius have an open mind and philosophical view motivates them to wander around the world in search of the meaning of life. Sagittarius needs to constantly be in touch with the world. ";
-     document.getElementById("symbol").innerHTML = "<img src='https://i1.wp.com/lamarrtownsendtarot.com/wp-content/uploads/2017/07/sagittarius.png?fit=1568%2C1531&ssl=1' width='200' length='200'>";
-    } else {
+  {
+    document.getElementById("message").innerHTML = "You are a Libra! You are peaceful, fair, and hate being alone. You like partnership. Libras are fasinated by balance and symmetry and are in a constant chase for justice and equality. Libras are willing to do nearly everything to avoid conflict. ";
+    document.getElementById("symbol").innerHTML = "<img src='https://amethystlunarose.com/wp-content/uploads/2018/11/Libra-1200-1140x863.jpg' width='200' length='200'>";
+  } else {
 
- if(month == 12 && (day > 31 || day < 1)){
-        alert(invalid);
-      } }
+if(month == 10 && (day > 31 || day < 1)){
+      alert(invalid);
+    } }
 
-        //Capricorn (12/22 - 1/19)
-    if((month == 12 &&  (day >= 22 && day <= 31)) || (month == 1 && (day >= 1  && day <= 19)))
+      //Scorpio (10/23 - 11/21)
+  if((month == 10 &&  (day >= 23 && day <= 31)) || (month == 11 && (day >= 1  && day <= 21)))
 
-    {
-     document.getElementById("message").innerHTML = "You are a Capricorn! You are responsible, disciplined, self-controlled, and good managers. Capricorn is a sign that represents time and responsibility. Capricorns possess an inner state of independence. They are masters at self-control and have the ability to lead the way.  ";
-     document.getElementById("symbol").innerHTML = "<img src='https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1559400738l/45905270.jpg' width='200' length='200'>";
-    } else {
+  {
+   document.getElementById("message").innerHTML = "You are a Scorpio! You are passionate and assertive. You are determined and decisive and will research until they find out the truth. Scorpios are resourceful, brave, passionate, stubborn, and a true friend. You will keep other people's secrets no matter what.";
+   document.getElementById("symbol").innerHTML = "<img src='https://blog.prepscholar.com/hs-fs/hubfs/zodiac-sign-4374412_1920.jpg?width=459&name=zodiac-sign-4374412_1920.jpg' width='200' length='200'>";
+  } else {
 
-     if(month == 1 && (day > 31 || day < 1)){
-            alert(invalid);
-      }   }
+if(month == 11 && (day > 30 || day < 1)){
+      alert(invalid);
+    } }
 
-      }
+      //Sagittarius (11/22 - 12/21)
+  if((month == 11 &&  (day >= 22 && day <= 30)) || (month == 12 && (day >= 1  && day <= 21)))
 
-      </script>
+  {
+   document.getElementById("message").innerHTML = "You are a Sagittarius! You are curious and energetic. You are one of the biggest travelers among the zodiac signs. Sagittarius have an open mind and philosophical view motivates them to wander around the world in search of the meaning of life. Sagittarius needs to constantly be in touch with the world. ";
+   document.getElementById("symbol").innerHTML = "<img src='https://i1.wp.com/lamarrtownsendtarot.com/wp-content/uploads/2017/07/sagittarius.png?fit=1568%2C1531&ssl=1' width='200' length='200'>";
+  } else {
 
-      <style>
-       /*Give me a background*/
-       /*Change font size, color, style*/
-       /*Do something on Hover*/
+if(month == 12 && (day > 31 || day < 1)){
+      alert(invalid);
+    } }
 
-       body {
-         background-image: url(https://images.hdqwalls.com/wallpapers/moon-fox-galaxy-4k-79.jpg);
-         background-attachment: fixed;
-         background-size: cover;
-         color: white;
-         font-size: 30px;
-         margin: 100px;
-         font-family: Geneva,Tahoma,Verdana,sans-serif;
-       }
+      //Capricorn (12/22 - 1/19)
+  if((month == 12 &&  (day >= 22 && day <= 31)) || (month == 1 && (day >= 1  && day <= 19)))
 
-       hr{
-         width: 75%;
-         border-style: double;
-         color: white;
-       }
+  {
+   document.getElementById("message").innerHTML = "You are a Capricorn! You are responsible, disciplined, self-controlled, and good managers. Capricorn is a sign that represents time and responsibility. Capricorns possess an inner state of independence. They are masters at self-control and have the ability to lead the way.  ";
+   document.getElementById("symbol").innerHTML = "<img src='https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1559400738l/45905270.jpg' width='200' length='200'>";
+  } else {
 
-       #button1:hover{
-         background-color: mediumpurple;
-         color: white;
-         border-radius: 5px;
-         border: 2px solid black;
-       }
+   if(month == 1 && (day > 31 || day < 1)){
+          alert(invalid);
+    }   }
 
-       p{
-         font-size: 20px;
-       }
+    }
 
-       h2{
-         border: 5px solid DeepSkyBlue;
-         border-style: outset;
-         border-radius: 10px;
-         animation: mymove 5s infinite;
+    </script>
 
-       }
+    <style>
+     /*Give me a background*/
+     /*Change font size, color, style*/
+     /*Do something on Hover*/
 
-       @keyframes mymove {
-         50% {border-color: MediumSlateBlue;}
-       }
+     body {
+       background-image: url(https://images.hdqwalls.com/wallpapers/moon-fox-galaxy-4k-79.jpg);
+       background-attachment: fixed;
+       background-size: cover;
+       color: white;
+       font-size: 30px;
+       margin: 100px;
+       font-family: Geneva,Tahoma,Verdana,sans-serif;
+     }
+
+     hr{
+       width: 75%;
+       border-style: double;
+       color: white;
+     }
+
+     #button1:hover{
+       background-color: mediumpurple;
+       color: white;
+       border-radius: 5px;
+       border: 2px solid black;
+     }
+
+     p{
+       font-size: 20px;
+     }
+
+     h2{
+       border: 5px solid DeepSkyBlue;
+       border-style: outset;
+       border-radius: 10px;
+       animation: mymove 5s infinite;
+
+     }
+
+     @keyframes mymove {
+       50% {border-color: MediumSlateBlue;}
+     }
 
 
 /* Navigation Bar */
 
-      ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: none;
-      padding-top: 0px;
-      font-size: 21px;
-      }
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+    padding-top: 0px;
+    font-size: 21px;
+    }
 
-      li {
-      float: left;
-      display: inline;
-      }
+    li {
+    float: left;
+    display: inline;
+    }
 
-      li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 10px 16px;
-      text-decoration: none;
-      }
+    li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    }
 
-      li a:hover {
-      background-color: GhostWhite;
-      color: black;
-      }
-
-
+    li a:hover {
+    background-color: GhostWhite;
+    color: black;
+    }
 
 
 
 
-      </style>
-   </head>
-
-   <body>
-
-     <ul>
-      <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/aquarius/" target="_blank">Aquarius</a></li>
-      <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/pisces/" target="_blank">Pisces</a></li>
-      <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/aries/" target="_blank">Aries</a></li>
-      <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/taurus/" target="_blank">Taurus</a></li>
-      <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/gemini/" target="_blank">Gemini</a></li>
-      <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/cancer/" target="_blank">Cancer</a></li>
-      <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/leo/" target="_blank">Leo</a></li>
-      <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/virgo/" target="_blank">Virgo</a></li>
-      <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/libra/" target="_blank">Libra</a></li>
-      <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/scorpio/" target="_blank">Scorpio</a></li>
-      <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/sagittarius/" target="_blank">Sagitarrius</a></li>
-      <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/capricorn/" target="_blank">Capricorn</a></li>
-    </ul>
 
 
+    </style>
+ </head>
+
+ <body>
+
+   <ul>
+    <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/aquarius/" target="_blank">Aquarius</a></li>
+    <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/pisces/" target="_blank">Pisces</a></li>
+    <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/aries/" target="_blank">Aries</a></li>
+    <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/taurus/" target="_blank">Taurus</a></li>
+    <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/gemini/" target="_blank">Gemini</a></li>
+    <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/cancer/" target="_blank">Cancer</a></li>
+    <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/leo/" target="_blank">Leo</a></li>
+    <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/virgo/" target="_blank">Virgo</a></li>
+    <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/libra/" target="_blank">Libra</a></li>
+    <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/scorpio/" target="_blank">Scorpio</a></li>
+    <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/sagittarius/" target="_blank">Sagitarrius</a></li>
+    <li><a href="https://www.astrology-zodiac-signs.com/zodiac-signs/capricorn/" target="_blank">Capricorn</a></li>
+  </ul>
 
 
-     <h2>Zodiac Horoscope Exclusive</h2>
-     <h6>Find your zodiac sign with your birthday!</h6>
-     <input id="input1" type = "number" min="1" max="12" value = "month">
-     <input id="input2" type = "number" min="1" max="31" value = "day">
-     <p>Put in your numerical birthday.</p>
-     <input id="button1" type = "button" value = "Find your Zodiac!" onclick = "fortune()">
-     <hr><br><br>
-     <span id = "symbol"></span>
-     <br>
-     <span id = "message"></span>
-   </body>
+
+
+   <h2>Zodiac Horoscope Exclusive</h2>
+   <h6>Find your zodiac sign with your birthday!</h6>
+   <input id="input1" type = "number" min="1" max="12" value = "month">
+   <input id="input2" type = "number" min="1" max="31" value = "day">
+   <p>Put in your numerical birthday.</p>
+   <input id="button1" type = "button" value = "Find your Zodiac!" onclick = "fortune()">
+   <hr><br><br>
+   <span id = "symbol"></span>
+   <br>
+   <span id = "message"></span>
+ </body>
 </center>
 </html>
+
 
